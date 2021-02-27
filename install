@@ -7,4 +7,5 @@ ln -svf ~/.dotfiles/bash/.functions ~
 ln -svf ~/.dotfiles/bash/.alias ~
 ln -svf ~/.dotfiles/git/.gitconfig ~
 ln -svf ~/.dotfiles/vim/.vimrc ~
+ln -svf ~/.dotfiles/i3/config ~/.config/i3/
 dconf load /com/gexperts/Tilix/ < ~/.dotfiles/tilix/tilix.dconf
