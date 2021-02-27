@@ -1,0 +1,10 @@
+# TODO determine cwd, use instead of hardcoded /home/user/.dotfiles
+# TODO maybe make this python?
+ln -svf ~/.dotfiles/bash/.bash_profile ~
+ln -svf ~/.dotfiles/bash/.bashrc ~
+ln -svf ~/.dotfiles/bash/.env ~
+ln -svf ~/.dotfiles/bash/.functions ~
+ln -svf ~/.dotfiles/bash/.alias ~
+ln -svf ~/.dotfiles/git/.gitconfig ~
+ln -svf ~/.dotfiles/vim/.vimrc ~
+dconf load /com/gexperts/Tilix/ < ~/.dotfiles/tilix/tilix.dconf
