@@ -1,11 +1,26 @@
 # TODO determine cwd, use instead of hardcoded /home/user/.dotfiles
 # TODO maybe make this python?
+
+# Bash
 ln -svf ~/.dotfiles/bash/.bash_profile ~
 ln -svf ~/.dotfiles/bash/.bashrc ~
 ln -svf ~/.dotfiles/bash/.env ~
 ln -svf ~/.dotfiles/bash/.functions ~
 ln -svf ~/.dotfiles/bash/.alias ~
+
+# Git
 ln -svf ~/.dotfiles/git/.gitconfig ~
+
+# Vim
 ln -svf ~/.dotfiles/vim/.vimrc ~
+
+# i3
 ln -svf ~/.dotfiles/i3/config ~/.config/i3/
+
+# tilix
 dconf load /com/gexperts/Tilix/ < ~/.dotfiles/tilix/tilix.dconf
+
+# vscode
+# extensions generated using 'code --list-extensions'
+code --list-extensions | xargs -n 1 code --uninstall-extension
+cat ~/.dotfiles/vscode/extensions | xargs -n 1 code --install-extension
