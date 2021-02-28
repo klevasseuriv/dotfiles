@@ -35,9 +35,6 @@ bindsym $mod+Return exec tilix
 # lock the screen
 bindsym $mod+z exec i3lock
 
-# rotate
-bindcode 561 exec xrandr --output eDP-1 --rotate left --auto
-
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec amixer sset 'Master' 5%+ #increase sound volume
 bindsym XF86AudioLowerVolume exec amixer sset 'Master' 5%- #decrease sound volume
