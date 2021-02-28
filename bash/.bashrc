@@ -1,9 +1,22 @@
 # .bashrc
-
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+	source /etc/bashrc
 fi
+
+# rest of the dotfiles
+if [ -f ~/.alias ]; then
+        source ~/.alias
+fi
+
+if [ -f ~/.env ]; then
+        source ~/.env
+fi
+
+if [ -f ~/.functions ]; then
+        source ~/.functions
+fi
+
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
@@ -15,10 +28,11 @@ export PATH
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-# User specific aliases and functions
+# unlimited history
 HISTSIZE=
 HISTFILESIZE=
 
+# powerline
 if [ -f `which powerline-daemon` ]; then
   powerline-daemon -q
   POWERLINE_BASH_CONTINUATION=1
