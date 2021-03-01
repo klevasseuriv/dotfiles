@@ -17,6 +17,19 @@ if [ -f ~/.functions ]; then
         source ~/.functions
 fi
 
+# allow for local/private content
+if [ -f ~/.alias.local ]; then
+        source ~/.alias.local
+fi
+
+if [ -f ~/.env.local ]; then
+        source ~/.env.local
+fi
+
+if [ -f ~/.functions.local ]; then
+        source ~/.functions.local
+fi
+
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]

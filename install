@@ -22,6 +22,7 @@ dconf load /com/gexperts/Tilix/ < ~/.dotfiles/tilix/tilix.dconf
 
 # vscode
 # extensions generated using 'code --list-extensions'
+# note that this will remove/replace any existing extensions
 ln -svf ~/.dotfiles/vscode/settings.json ~/.config/Code/User/
 code --list-extensions | xargs -n 1 code --uninstall-extension
 cat ~/.dotfiles/vscode/extensions | xargs -n 1 code --install-extension
