@@ -187,7 +187,7 @@ bindsym XF86Launch3 exec systemctl suspend
 # onboard
 bindsym XF86Launch1 exec onboard
 #Set wallpaper on start
-exec feh --bg-scale ~/Pictures/wallpapers/gRjEuyi.jpg
+exec feh --bg-scale ~/.dotfiles/wallpapers/1.jpg
 
 #enable compton(kill me again)
 exec --no-startup-id "compton -b"

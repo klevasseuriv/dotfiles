@@ -8,6 +8,10 @@ ln -svf ~/.dotfiles/bash/.env ~
 ln -svf ~/.dotfiles/bash/.functions ~
 ln -svf ~/.dotfiles/bash/.alias ~
 
+# ZSH
+ln -svf ~/.dotfiles/zsh/.zshrc ~
+ln -svf ~/.dotfiles/zsh/.p10k.zsh ~
+
 # Git
 ln -svf ~/.dotfiles/git/.gitconfig ~
 
