@@ -36,9 +36,9 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # history settings
 HISTFILE=~/.zsh_history
-setopt HIST_IGNORE_SPACE
-setopt EXTENDED_HISTORY
-setopt SHARE_HISTORY
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
 
 # local, non-tracked environment variables
 [ -f ~/.env.local ] && source ~/.env.local
