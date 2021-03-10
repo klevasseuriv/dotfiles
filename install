@@ -5,13 +5,6 @@
 mkdir -p ~/.local/share/fonts && cp -f ~/.dotfiles/fonts/*.ttf ~/.local/share/fonts/
 fc-cache -f
 
-# Bash
-ln -svf ~/.dotfiles/bash/.bash_profile ~
-ln -svf ~/.dotfiles/bash/.bashrc ~
-ln -svf ~/.dotfiles/bash/.env ~
-ln -svf ~/.dotfiles/bash/.functions ~
-ln -svf ~/.dotfiles/bash/.alias ~
-
 # ZSH
 ln -svf ~/.dotfiles/zsh/.zshrc ~
 ln -svf ~/.dotfiles/zsh/.p10k.zsh ~

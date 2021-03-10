@@ -40,5 +40,13 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
-# local, non-tracked environment variables
+# nvim
+alias vim="nvim"
+
+# pip
+alias pip3="/usr/bin/python3 -m pip"
+
+# local, non-tracked files
 [ -f ~/.env.local ] && source ~/.env.local
+[ -f ~/.alias.local ] && source ~/.alias.local
+[ -f ~/.functions.local ] && source ~/.functions.local
