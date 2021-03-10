@@ -39,3 +39,6 @@ HISTFILE=~/.zsh_history
 setopt HIST_IGNORE_SPACE
 setopt EXTENDED_HISTORY
 setopt SHARE_HISTORY
+
+# local, non-tracked environment variables
+[ -f ~/.env.local ] && source ~/.env.local
