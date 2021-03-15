@@ -4,7 +4,7 @@ Non-sensitive, non-proprietary workstation environment config
 
 ## Requirements:
 - git
-- vim,nvim
+- vim,neovim
 - python3,pip
 - i3
 - tilix
@@ -13,6 +13,7 @@ Non-sensitive, non-proprietary workstation environment config
 - compton
 - util-linux-user (chsh)
 - zsh
+- exa
 
 
 ## Install:

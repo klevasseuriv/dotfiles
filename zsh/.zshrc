@@ -40,11 +40,16 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
+PATH="$PATH:$HOME/.local/bin"
+
 # nvim
 alias vim="nvim"
 
 # pip
 alias pip3="/usr/bin/python3 -m pip"
+
+# exa
+alias ls="exa -a"
 
 # local, non-tracked files
 [ -f ~/.env.local ] && source ~/.env.local

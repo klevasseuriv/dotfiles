@@ -12,8 +12,10 @@ ln -svf ~/.dotfiles/zsh/.p10k.zsh ~
 # Git
 ln -svf ~/.dotfiles/git/.gitconfig ~
 
-# Vim
-ln -svf ~/.dotfiles/vim/.vimrc ~
+# NeoVim
+mkdir -p ~/.config/nvim
+ln -svf ~/.dotfiles/nvim/init.vim ~/.config/nvim/
+ln -svf ~/.dotfiles/nvim/coc-settings.json ~/.config/nvim/
 
 # i3
 ln -svf ~/.dotfiles/i3/config ~/.config/i3/
